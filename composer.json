@@ -1,0 +1,40 @@
+{
+    "name": "sonsofphp/event-dispatcher",
+    "type": "library",
+    "description": "Simple PSR-14 dispatcher",
+    "keywords": ["event dispatcher", "psr-14"],
+    "homepage": "https://github.com/SonsOfPHP/event-dispatcher",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joshua Estes",
+            "email": "joshua@sonsofphp.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/SonsOfPHP/sonsofphp/issues",
+        "forum": "https://github.com/orgs/SonsOfPHP/discussions"
+    },
+    "autoload": {
+        "psr-4": {
+            "SonsOfPHP\\Component\\EventDispatcher\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": ">=7.4",
+        "psr/event-dispatcher": "^1.0"
+    },
+    "provide": {
+        "psr/event-dispatcher-implementation": "1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1.x-dev"
+        }
+    }
+}
